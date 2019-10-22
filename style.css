@@ -3,4 +3,45 @@ body {
   color: #1753ad;
 }
 
+header {
+  display: flex;
+  height: 20vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container, .nav-links, .cart {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 0.3125rem;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+nav {
+  flex: 2;
+}
+
+.cart {
+  flex: 0.5;
+  justify-content: flex-end;
+}
+
 /*# sourceMappingURL=style.css.map */
