@@ -132,4 +132,12 @@ nav {
   z-index: -1;
 }
 
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
