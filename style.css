@@ -99,12 +99,16 @@ nav {
 
 .cover {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
 }
 
 .cover img {
-  height: 60vh;
-  filter: drop-shadow(0rem 0.3125rem 0.1875rem black);
+  height: 100%;
   /*How you add a shadow to png images */
+  filter: drop-shadow(0rem 0.3125rem 0.1875rem black);
+  animation: drop 1.5s ease;
 }
 
 .big-circle {
@@ -138,6 +142,57 @@ nav {
   justify-content: space-around;
   position: absolute;
   right: 20%;
+  bottom: 5%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 1.875rem;
+  }
+
+  .intro-text p {
+    font-size: 1.125rem;
+  }
+
+  .cta {
+    padding: 0.625rem 0rem 0rem 0rem;
+  }
+
+  .laptop-select {
+    bottom: 0%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+
+  .cover img {
+    height: 50%;
+  }
+
+  .small-circle,
+.medium-circle,
+.big-circle {
+    opacity: 0.2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
